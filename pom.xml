@@ -14,5 +14,11 @@
 	<name>dw-commons maven pom parent</name>
 	<url>http://www.developerworld.org</url>
 	<description>所有dw-commons内应用maven的项目，均会直接后间接应用到本pom的配置</description>
-
+	
+	<!-- scm配置 -->
+	<scm>
+		<connection>${scm.connection}</connection>
+		<developerConnection>${scm.developerConnection}</developerConnection>
+		<url>${scm.url}</url>
+	</scm>
 </project>
