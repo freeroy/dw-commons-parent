@@ -4,15 +4,23 @@
 	<parent>
 		<groupId>org.developerworld.maven</groupId>
 		<artifactId>dw-maven-parent</artifactId>
-		<version>0.0.2</version>
+		<version>0.0.1</version>
 	</parent>
 
 	<groupId>org.developerworld.commons</groupId>
 	<artifactId>dw-commons-parent</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>pom</packaging>
 	<name>dw-commons maven pom parent</name>
 	<url>http://www.developerworld.org</url>
 	<description>所有dw-commons内应用maven的项目，均会直接后间接应用到本pom的配置</description>
+	
+	<!-- 配置svn发布位置 -->
+	<scm>
+		<connection>${scm.connection}</connection>
+		<developerConnection>${scm.developerConnection}</developerConnection>
+		<url>${scm.url}</url>
+		<tag>HEAD</tag>
+	</scm>
 	
 </project>
